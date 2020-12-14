@@ -1,0 +1,129 @@
+HipF:
+    RIGHT:
+        mass: 3.1890
+        center_of_mass: 
+            X: 0.11
+            Y: -0.05
+            Z: 0.89
+        joint_coord: 
+            X: 0.11
+            Y: 0.00
+            Z: 0.89
+        motor_ops: 
+            motor_name: 'R_HipF'
+            stick_to: 'Pelvis'
+            axes: 
+                X: -1.0
+                Y: 0.0
+                Z: 0.0
+            min_angle: -90
+            max_angle: 35
+            angular_speed: 350
+            torque: 450.0
+    LEFT:
+        mass: 3.1890
+        center_of_mass: 
+            X: -0.10
+            Y: -0.05
+            Z: 0.89
+        joint_coord: 
+            X: -0.10
+            Y: 0.00
+            Z: 0.89
+        motor_ops: 
+            motor_name: 'L_HipF'
+            stick_to: 'Pelvis'
+            axes: 
+                X: -1.0
+                Y: 0.0
+                Z: 0.0
+            min_angle: -90
+            max_angle: 35
+            angular_speed: 350
+            torque: 450.0
+HipS:
+    RIGHT:
+        mass: 2.5570
+        center_of_mass: 
+            X: 0.11
+            Y: -0.03
+            Z: 0.81
+        joint_coord: 
+            X: 0.11
+            Y: 0.00
+            Z: 0.89
+        motor_ops: 
+            motor_name: 'R_HipS'
+            stick_to: 'R_HipF'
+            axes: 
+                X: 0.0
+                Y: 1.0
+                Z: 0.0
+            min_angle: -90
+            max_angle: 12
+            angular_speed: 70
+            torque: 345.0
+    LEFT:
+        mass: 2.5570
+        center_of_mass: 
+            X: -0.10
+            Y: -0.03
+            Z: 0.81
+        joint_coord: 
+            X: -0.10
+            Y: 0.00
+            Z: 0.89
+        motor_ops: 
+            motor_name: 'L_HipS'
+            stick_to: 'L_HipF'
+            axes: 
+                X: 0.0
+                Y: 1.0
+                Z: 0.0
+            min_angle: -12
+            max_angle: 90
+            angular_speed: 70
+            torque: 345.0
+HipR:
+    RIGHT:
+        mass: 4.3837
+        center_of_mass: 
+            X: 0.11
+            Y: 0.00
+            Z: 0.66
+        joint_coord: 
+            X: 0.11
+            Y: 0.00
+            Z: 0.73
+        motor_ops: 
+            motor_name: 'R_HipR'
+            stick_to: 'R_HipS'
+            axes: 
+                X: 0.0
+                Y: 0.0
+                Z: -1.0
+            min_angle: -90
+            max_angle: 90
+            angular_speed: 113
+            torque: 240.0
+    LEFT:
+        mass: 4.3837
+        center_of_mass: 
+            X: -0.11
+            Y: 0.00
+            Z: 0.66
+        joint_coord: 
+            X: -0.10
+            Y: 0.00
+            Z: 0.73
+        motor_ops: 
+            motor_name: 'L_HipR'
+            stick_to: 'L_HipS'
+            axes: 
+                X: 0.0
+                Y: 0.0
+                Z: -1.0
+            min_angle: -90
+            max_angle: 90
+            angular_speed: 113
+            torque: 240.0

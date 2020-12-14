@@ -1,0 +1,63 @@
+HeadF:
+    mass: 4.2980
+    center_of_mass: 
+        X: 0.00
+        Y: 0.13
+        Z: 1.64
+    joint_coord: 
+        X: 0.00
+        Y: 0.04
+        Z: 1.64
+    motor_ops: 
+        motor_name: 'HeadF'
+        stick_to: 'HeadR'
+        axes: 
+            X: -1.0
+            Y: 0.0
+            Z: 0.0
+        min_angle: -60
+        max_angle: 20
+        angular_speed: 130
+        torque: 450.0
+HeadR:
+    mass: 1.7000
+    center_of_mass: 
+        X: 0.00
+        Y: 0.03
+        Z: 1.61
+    joint_coord: 
+        X: 0.00
+        Y: 0.02
+        Z: 1.54
+    motor_ops: 
+        motor_name: 'HeadR'
+        stick_to: 'Neck'
+        axes: 
+            X: 0.0
+            Y: 0.0
+            Z: -1.0
+        min_angle: -80
+        max_angle: 80
+        angular_speed: 420
+        torque: 172.0
+Neck: 
+    mass: 1.6340
+    center_of_mass: 
+        X: 0.00
+        Y: 0.03
+        Z: 1.51
+    joint_coord: 
+        X: 0.01
+        Y: 0.04
+        Z: 1.48
+    motor_ops: 
+        motor_name: 'Neck'
+        stick_to: 'TorsoR'
+        axes: 
+            X: -1.0
+            Y: 0.0
+            Z: 0.0
+        min_angle: -10
+        max_angle: 40
+        angular_speed: 110
+        torque: 360.0
