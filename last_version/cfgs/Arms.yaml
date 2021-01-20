@@ -1,0 +1,172 @@
+ShoulderF:
+    RIGHT:
+        mass: 3.2390
+        center_of_mass: 
+            X: 0.18
+            Y: 0.03
+            Z: 1.35
+        joint_coord: 
+            X: 0.10
+            Y: 0.03
+            Z: 1.35
+        motor_ops: 
+            motor_name: 'R_ShoulderF'
+            stick_to: 'TorsoR'
+            axes: 
+                X: -1.0
+                Y: 0.0
+                Z: 0.0
+            min_angle: -150
+            max_angle: 90
+            angular_speed: 360
+            torque: 322.5
+    LEFT:
+        mass: 3.2390
+        center_of_mass: 
+            X: -0.18
+            Y: 0.03
+            Z: 1.35
+        joint_coord: 
+            X: -0.09
+            Y: 0.02
+            Z: 1.35
+        motor_ops: 
+            motor_name: 'L_ShoulderF'
+            stick_to: 'TorsoR'
+            axes: 
+                X: -1.0
+                Y: 0.0
+                Z: 0.0
+            min_angle: -150
+            max_angle: 90
+            angular_speed: 360
+            torque: 322.0
+ShoulderS:
+    RIGHT:
+        mass: 3.4870
+        center_of_mass: 
+            X: 0.23
+            Y: 0.01
+            Z: 1.28
+        joint_coord: 
+            X: 0.21
+            Y: 0.03
+            Z: 1.35
+        motor_ops: 
+            motor_name: 'R_ShoulderS'
+            stick_to: 'R_ShoulderF'
+            axes: 
+                X: 0.0
+                Y: 1.0
+                Z: 0.0
+            min_angle: -150
+            max_angle: 0
+            angular_speed: 180
+            torque: 495.5
+    LEFT:
+        mass: 3.4870
+        center_of_mass: 
+            X: -0.23
+            Y: 0.01
+            Z: 1.28
+        joint_coord: 
+            X: -0.21
+            Y: 0.03
+            Z: 1.35
+        motor_ops: 
+            motor_name: 'L_ShoulderS'
+            stick_to: 'L_ShoulderF'
+            axes: 
+                X: 0.0
+                Y: 1.0
+                Z: 0.0
+            min_angle: 0
+            max_angle: 150
+            angular_speed: 180
+            torque: 495.0
+ElbowR:
+    RIGHT:
+        mass: 3.0770
+        center_of_mass: 
+            X: 0.28
+            Y: -0.03
+            Z: 1.14
+        joint_coord: 
+            X: 0.26
+            Y: -0.01
+            Z: 1.21
+        motor_ops: 
+            motor_name: 'R_ElbowR'
+            stick_to: 'R_ShoulderS'
+            axes: 
+                X: 0.0
+                Y: 0.0
+                Z: -1.0
+            min_angle: -110
+            max_angle: 110
+            angular_speed: 360
+            torque: 225.0
+    LEFT:
+        mass: 3.0770
+        center_of_mass: 
+            X: -0.27
+            Y: -0.03
+            Z: 1.14
+        joint_coord: 
+            X: -0.25
+            Y: -0.01
+            Z: 1.21
+        motor_ops: 
+            motor_name: 'L_ElbowR'
+            stick_to: 'L_ShoulderS'
+            axes: 
+                X: 0.0
+                Y: 0.0
+                Z: -1.0
+            min_angle: -110
+            max_angle: 110
+            angular_speed: 360
+            torque: 225.0
+Elbow:
+    RIGHT:
+        mass: 3.2637
+        center_of_mass: 
+            X: 0.32
+            Y: -0.02
+            Z: 0.90
+        joint_coord: 
+            X: 0.29
+            Y: -0.03
+            Z: 1.08
+        motor_ops: 
+            motor_name: 'R_Elbow'
+            stick_to: 'R_ElbowR'
+            axes: 
+                X: -1.0
+                Y: 0.0
+                Z: 0.0
+            min_angle: -120
+            max_angle: 5
+            angular_speed: 230
+            torque: 255.0
+    LEFT:
+        mass: 3.2637
+        center_of_mass: 
+            X: -0.31
+            Y: -0.02
+            Z: 0.90
+        joint_coord: 
+            X: -0.28
+            Y: -0.03
+            Z: 1.08
+        motor_ops: 
+            motor_name: 'L_Elbow'
+            stick_to: 'L_ElbowR'
+            axes: 
+                X: -1.0
+                Y: 0.0
+                Z: 0.0
+            min_angle: -120
+            max_angle: 5
+            angular_speed: 230
+            torque: 255.0

@@ -1,0 +1,69 @@
+TorsoR:
+    mass: 20.590
+    center_of_mass: 
+        X: 0.00
+        Y: -0.01
+        Z: 1.29
+    joint_coord: 
+        X: 0.00
+        Y: 0.02
+        Z: 1.23
+    motor_ops: 
+        motor_name: 'TorsoR'
+        stick_to: 'TorsoF'
+        axes: 
+            X: 0.0
+            Y: 0.0
+            Z: -1.0
+        min_angle: -95
+        max_angle: 95
+        angular_speed: 230
+        torque: 525.0
+TorsoF:
+    mass: 2.5000
+    center_of_mass: 
+        X: 0.01
+        Y: 0.02
+        Z: 1.08
+    joint_coord: 
+        X: 0.00
+        Y: 0.01
+        Z: 1.03
+    motor_ops: 
+        motor_name: 'TorsoF'
+        stick_to: 'TorsoS'
+        axes: 
+            X: -1.0
+            Y: 0.0
+            Z: 0.0
+        min_angle: -12
+        max_angle: 40
+        angular_speed: 75
+        torque: 525.0
+TorsoS:
+    mass: 4.1050
+    center_of_mass: 
+        X: 0.00
+        Y: -0.01
+        Z: 1.03
+    joint_coord: 
+        X: 0.00
+        Y: 0.01
+        Z: 1.03
+    motor_ops: 
+        motor_name: 'TorsoS'
+        stick_to: 'Pelvis'
+        axes: 
+            X: 0.0
+            Y: 1.0
+            Z: 0.0
+        min_angle: -15
+        max_angle: 15
+        angular_speed: 753
+        torque: 75.0
+Pelvis:
+    mass: 5.5420
+    center_of_mass: 
+        X: 0.00
+        Y: -0.01
+        Z: 0.91

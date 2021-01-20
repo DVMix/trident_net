@@ -1,0 +1,142 @@
+Knee:
+    RIGHT:
+        mass: 6.1700
+        center_of_mass: 
+            X: 0.11
+            Y: -0.02
+            Z: 0.37
+        joint_coord: 
+            X: 0.11
+            Y: 0.00
+            Z: 0.49
+        motor_ops: 
+            motor_name: 'R_Knee'
+            stick_to: 'R_HipR'
+            axes: 
+                X: -1.0
+                Y: 0.0
+                Z: 0.0
+            min_angle: 0
+            max_angle: 110
+            angular_speed: 455
+            torque: 375.0
+    LEFT:
+        mass: 6.1700
+        center_of_mass: 
+            X: -0.11
+            Y: -0.02
+            Z: 0.37
+        joint_coord: 
+            X: -0.11
+            Y: 0.00
+            Z: 0.49
+        motor_ops: 
+            motor_name: 'L_Knee'
+            stick_to: 'L_HipR'
+            axes: 
+                X: -1.0
+                Y: 0.0
+                Z: 0.0
+            min_angle: 0
+            max_angle: 110
+            angular_speed: 455
+            torque: 375.0
+AnkleF:
+    RIGHT: 
+        mass: 0.7030
+        center_of_mass: 
+            X: 0.11
+            Y: -0.01
+            Z: 0.10
+        joint_coord: 
+            X: 0.11
+            Y: 0.00
+            Z: 0.10
+        motor_ops: 
+            motor_name: 'R_AnkleF'
+            stick_to: 'R_Knee'
+            axes: 
+                X: -1.0
+                Y: 0.0
+                Z: 0.0
+            min_angle: -40
+            max_angle: 25
+            angular_speed: 180
+            torque: 240.0
+    LEFT: 
+        mass: 0.7030
+        center_of_mass: 
+            X: -0.12
+            Y: -0.01
+            Z: 0.10
+        joint_coord: 
+            X: -0.11
+            Y: 0.00
+            Z: 0.10
+        motor_ops: 
+            motor_name: 'L_AnkleF'
+            stick_to: 'L_Knee'
+            axes: 
+                X: -1.0
+                Y: 0.0
+                Z: 0.0
+            min_angle: -40
+            max_angle: 25
+            angular_speed: 180
+            torque: 240.0
+AnkleS:
+    RIGHT:
+        mass: 1.5110
+        center_of_mass: 
+            X: 0.11
+            Y: 0.02
+            Z: 0.04
+        joint_coord: 
+            X: 0.11
+            Y: 0.00
+            Z: 0.10
+        motor_ops: 
+            motor_name: 'R_AnkleS'
+            stick_to: 'R_AnkleF'
+            axes: 
+                X: 0.0
+                Y: 1.0
+                Z: 0.0
+            min_angle: -30
+            max_angle: 30
+            angular_speed: 210
+            torque: 150.0
+    LEFT:
+        mass: 1.5110
+        center_of_mass: 
+            X: -0.12
+            Y: 0.02
+            Z: 0.04
+        joint_coord: 
+            X: -0.11
+            Y: 0.00
+            Z: 0.10
+        motor_ops: 
+            motor_name: 'L_AnkleS'
+            stick_to: 'L_AnkleF'
+            axes: 
+                X: 0.0
+                Y: 1.0
+                Z: 0.0
+            min_angle: -30
+            max_angle: 30
+            angular_speed: 210
+            torque: 150.0
+Foot:
+    RIGHT:
+        mass: 1.0000
+        center_of_mass: 
+            X: 0.11
+            Y: 0.03
+            Z: 0.02
+    LEFT:
+        mass: 1.0000
+        center_of_mass: 
+            X: -0.12
+            Y: 0.03
+            Z: 0.02
